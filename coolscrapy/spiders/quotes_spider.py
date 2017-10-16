@@ -13,6 +13,7 @@ class QuotesSpider(scrapy.Spider):
     Review=270
     start_urls=[url+str(Review)]
 
+
     def parse(self,response):
 
         for href in response.css('table.wrapper'):
